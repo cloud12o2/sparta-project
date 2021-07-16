@@ -46,4 +46,4 @@ function helloWorld() {
 - 위 사진은 해당 사이트에서 로그인 폼(Login Form)을 검색해서 나온 결과입니다.
 - 사진에서 보이듯이 다른 사람이 구현해 놓은 코드를 전부 볼 수 있습니다.
 - 코드 전체 복사 붙여 넣기도 가능하고 참고용으로도 좋습니다.    
-https://codepen.io/
+<a href="https://codepen.io/" target="_blank">해당 링크</a>
