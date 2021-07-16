@@ -8,14 +8,20 @@ from pymongo import MongoClient
 client = MongoClient('localhost', 27017)
 db = client.dbsparta
 
-## HTML을 주는 부분
-@app.route('/')
-def home():
-    return render_template('index.html')
 
-@app.route('/test')
-def test():
-    return render_template('test.html')
+from views import main_views
+
+app.register_blueprint(main_views.bp)
+
+
+## HTML을 주는 부분
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
+#
+# @app.route('/test')
+# def test():
+#     return render_template('test.html')
 
 
 ## API 역할을 하는 부분
