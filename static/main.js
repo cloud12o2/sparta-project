@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#reviews-box").html("");
-    showReview();
+    ajaxPost();
 });
 
 function ajaxPost() {
@@ -18,9 +18,10 @@ function ajaxPost() {
 function ajaxGet() {
     $.ajax({
         type: "GET",
-        url: "/review?sample_give=샘플데이터",
+        url: "http://spartacodingclub.shop/post",
         data: {},
         success: function (response) {
+            console.log(response);
             alert(response["msg"]);
         }
     })
