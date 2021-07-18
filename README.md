@@ -36,3 +36,36 @@ function helloWorld() {
   console.log("Hello World");
 }
 ```
+<br/>
+<br/>
+
+## HTML, CSS, JavaScript 오픈소스 웹사이트
+
+<img src="https://user-images.githubusercontent.com/70641418/126017913-22ed0fe2-9dd6-49b0-ba60-1a2837e4f7e1.JPG">
+
+- 위 사진은 해당 사이트에서 로그인 폼(Login Form)을 검색해서 나온 결과입니다.
+- 사진에서 보이듯이 다른 사람이 구현해 놓은 코드를 전부 볼 수 있습니다.
+- 코드 전체 복사 붙여 넣기도 가능하고 참고용으로도 좋습니다.    
+<a href="https://codepen.io/" target="_blank" >해당 링크</a>   
+
+<br/>
+<br/>
+
+## Font Awesome (무료 Icon 웹사이트)
+
+<img src="https://user-images.githubusercontent.com/70641418/126022955-413574b3-493d-42c6-87bf-290f1bdabbec.JPG">
+
+- 위와 같이 원하는 아이콘을 찾아서 사용 할 수 있습니다.    
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/70641418/126022984-601b522b-5228-4030-8cdc-04dee16e2cb4.JPG">
+
+- 위 사진에 보시면 빨간색으로 표시된 부분을 클릭하면 해당 아이콘 태그가 복사됩니다.
+- 복사한 태그를 원하는 부분에 붙여넣기 하시면 됩니다.(HTML)   
+
+<br/>
+
+<a href="https://fontawesome.com/" target="_blank">해당 링크</a>
+
+
