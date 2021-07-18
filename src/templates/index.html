@@ -1,0 +1,17 @@
+{% extends "base.html"  %}
+{% block content %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+    </head>
+
+    <body>
+
+      <h1>
+          <i class="fas fa-arrow-right">메인페이지</i>
+      </h1>
+      <button type="button">
+          <a href="/test">test페이지로</a>
+      </button>
+
+      <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    </body>
+{% endblock %}

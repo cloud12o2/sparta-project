@@ -2,9 +2,6 @@
 <html lang="ko">
 
     <head>
-        <!-- Webpage Title -->
-        <title>프로젝트 기본</title>
-
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,7 +21,14 @@
         <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
 
         <!-- reset css -->
-        <link rel="stylesheet" href="../static/reset.css">
-  {% block content %}
-  {% endblock %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/reset.css') }}">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        {% if title %}
+            <title>{{ title }}</title>
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
 </html>
