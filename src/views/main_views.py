@@ -2,21 +2,6 @@ from flask import Blueprint, render_template
 
 main_page = Blueprint('main', __name__, url_prefix='/')
 
-## API 역할을 하는 부분
-# @app.route('/review', methods=['POST'])
-# def default_post():
-#     sample_receive = request.form['sample_give']
-#     print(sample_receive)
-#     return jsonify({'msg': '이 요청은 POST!'})
-#
-#
-# @app.route('/review', methods=['GET'])
-# def default_get():
-#     sample_receive = request.args.get('sample_give')
-#     print(sample_receive)
-#     return jsonify({'msg': '이 요청은 GET!'})
-
-
 
 # 아래와 같은 방식으로 웹페이지를 추가 할 수 있습니다.
 # '/' 는 메인 혹은 index 페이지입니다.
