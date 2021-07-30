@@ -1,0 +1,233 @@
+/*캐로셀*/
+
+/*캐로셀을 감싸는 제일 큰 컨테이너*/
+.carousel {
+    min-width: 1000px;
+    padding-top: 17vh;
+}
+
+/*캐로셀 내의 달린 모든 캡션*/
+.carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    text-align: right;
+}
+/*캐로셀 내의 영화 제목*/
+.main-movie-name {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+/*캐로셀 내의 영화 개봉일*/
+.main-movie-release-date {
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+/*캐로셀 내의 영화 설명*/
+.main-movie-description {
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* 캐로셀 아이콘 백그라운드 컬러 밑 크기*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: tomato;
+    width: 26px;
+    height: 29px;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+
+
+/*검색창*/
+
+/*검색창 (클래스 명 변경시 모양이 깨집니다)*/
+
+.search-form {
+  display: block;
+  margin: 12vh auto;
+  overflow: hidden;
+  width: 39%;
+}
+.search-form_label, input {
+  vertical-align: baseline;
+  color: #737373;
+}
+.search-form_label {
+  margin: 0.125em 0.125em 0 0;
+    float: right;
+}
+
+.search-form_input[type="search"] {
+    border: 2px solid #737373;
+    border-width: 0 0 3px;
+    background-color: transparent;
+    font: 22px "Open Sans", sans-serif;
+    padding: 0.125em 0.225em;
+    width: 85%;
+    float: left;
+}
+
+.search-form_input[type="search"]:focus {
+  color: whitesmoke;
+    font-weight: bold;
+  border-color: #63c5da;
+  outline: none;
+}
+
+.search-form_input::placeholder {
+    color: #757c88;
+    font-weight: bold;
+}
+
+.search-form_input:focus::-webkit-input-placeholder {
+    color: whitesmoke;
+}
+
+
+/*검색 결과창*/
+
+/*검색 결과에 관한 텍스트+영화가 붙을 제일 큰 컨테이너*/
+.search-resultbox {
+    width: 70%;
+    height: auto;
+    background-color: #050100;
+    margin: auto;
+    border-radius: 15px;
+    padding: 3vh 0;
+    border: 2px solid #63c5da;
+}
+/*(으)로 검색한 결과입니다 텍스트*/
+.search-result-text {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+/*검색 결과 컨테이너*/
+.container {
+    max-width: 1500px;
+    min-width: 1000px;
+    width: 100%;
+    height: auto;
+    margin: 100px auto 100px auto;
+}
+/*검색 결과가 행으로 붙을 수 있게 하는 row 클래스*/
+.row {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*검색 결과 내 영화 카드*/
+.result-movie-card{
+    width: 200px;
+}
+/*검색 결과 내 이미지 박스*/
+.image-box {
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+/*검색 결과 내 이미지*/
+.movie-image {
+    width: 200px;
+    height: 280px;
+    border-radius: 10px;
+    margin: auto;
+}
+/*검색 결과 내 모든 텍스트*/
+.movie-desc {
+    margin-top: 10px;
+    color: white;
+}
+/*검색 결과 내의 영화명*/
+.movie-name {
+    font-weight: bolder;
+}
+/*페이지 버튼이 붙을 박스*/
+.button-box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+/*페이지 버튼*/
+.list-btn {
+    display: flex;
+    width:40px;
+    height:40px;
+    font-size: larger;
+    font-weight: bolder;
+    line-height:40px;
+    color: white;
+    border:2px #3399dd solid;;
+    background-color: black;
+    border-radius: 8px;
+    justify-content: space-around;
+    cursor: pointer;
+
+}
+
+/*영화 추천*/
+
+/*오늘은 이런 영화 어때요? 텍스트*/
+.movie-recommendation {
+    margin: auto;
+    width: 70%;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 18vh;
+    min-width: 1000px;
+    max-width: 1500px;
+}
+/*영화 추천 박스*/
+.recommendation-wrap {
+    margin: auto;
+    width: 70%;
+    min-width: 1000px;
+    max-width: 1500px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 0px;
+    margin-bottom: 13vh;
+}
+/*이미지에 마우스오버시 호버링 애니메이션*/
+.card:hover img{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+/*첫 번째 영화추천카드 이미지*/
+.card-img {
+    height: 600px;
+    width: 100%;
+    object-fit: none;
+    object-position: right bottom;
+    transition: all 0.2s ease-in;
+}
+/*두 번째 영화추천카드 이미지*/
+.card-img2 {
+    height: 600px;
+    width: 100%;
+    object-fit: cover; !important;
+    object-position: left top; !important;
+    transition: all 0.2s ease-in;
+}
+/*영화추천카드 제목*/
+.card-title {
+    font-size: 50px;
+    color: white;
+}
+/*영화추천카드 내용*/
+.card-text {
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}

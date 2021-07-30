@@ -1,0 +1,162 @@
+
+.ranking-contents {
+    margin: 0 auto;
+    width: 83vw;
+    padding: 10vh 1vw;
+    overflow: hidden;
+}
+
+.movie-rank {
+    position: relative;
+    margin-bottom: 20vh;
+}
+
+.movie-rank_list {
+    padding: 0 1.7vw;
+}
+
+.movie-rank_list_img {
+    position: relative;
+    transition: transform .2s;
+}
+
+.movie-rank_list_img:hover {
+    transform: scale(1.05);
+}
+
+
+.movie-rank_list_img img {
+    width: 13vw;
+    background-color: white;
+    border-top: 3px solid dimgray;
+    border-right: 3px solid dimgray;
+    border-radius: 15px;
+    z-index: 999;
+}
+
+.movie-rank_list_img h3 {
+    position: absolute;
+    top: 0.7vh;
+    left: 0.5vw;
+    background-color: black;
+    width: 1.5vw;
+    height: 3vh;
+    font-size: 20px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+
+.movie-rank_list h2 {
+    font-weight: 700;
+    margin-top: 1vh;
+}
+
+.movie-rank_list div {
+    font-size: 14px;
+    margin-top: 1vh;
+}
+
+.movie-rank_list div i {
+    color: gold;
+}
+
+
+.movie-collections {
+    margin: 15vh 0;
+}
+
+.movie-collections_contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.movie-collections_list :not(h2) {
+    padding: 2px;
+    border-radius: 12px;
+    background-color: dimgray;
+}
+
+.movie-collections_list h2 {
+    margin-top: 1vh;
+}
+
+.movie-collections_list_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5px;
+    transition: transform .2s;
+}
+
+.movie-collections_list_img:hover {
+    transform: scale(1.05);
+}
+
+.movie-collections_list_img img {
+    width: 7vw;
+    border-radius: 12px;
+}
+
+
+.movie-rank_title,
+.movie-collections_title {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.movie-rank_ul,
+.movie-collections_ul {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.movie-rank_ul {
+    width: 100%;
+}
+
+.prev-button {
+   position: absolute;
+    top: 7.5vh;
+    left: 1.35vw;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+.next-button {
+    position: absolute;
+    top: 7vh;
+    right: 0.35vw;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+.prev-button button,
+.next-button button {
+    width: 1.5vw;
+    height: 3vh;
+    background-color: tomato;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 9998;
+}
+
+.prev-button button:hover,
+.next-button button:hover {
+    opacity: 1;
+    background-color: red;
+    border: 0.5px solid darkred;
+}
+
+.prev-button i,
+.next-button i {
+    color: white;
+}

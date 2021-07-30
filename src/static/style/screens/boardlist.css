@@ -1,0 +1,111 @@
+.board_top{
+    width: 100%;
+    padding-bottom: 80px;
+}
+.board_list_wrap{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 300px;
+}
+.board_list_wrap h3{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.board_list_wrap p{
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.btn_wrap{
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+}
+.btn_wrap a{
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-size: 12pt;
+}
+.btn_wrap a:first-child{
+    margin-left: 0;
+}
+.btn_wrap a.on{
+    background: white;
+    color: black !important;
+}
+.list_box{
+    width: 100%;
+    border-top: 2px solid white;
+}
+.list_box > div{
+    border-bottom: 1px solid grey;
+}
+.list_box > div.top{
+    border-bottom: 1px solid white;
+}
+.list_box > div:last-child{
+    border-bottom: 2px solid white;
+}
+.list_box > div > div{
+    display: inline-block;
+    padding: 15px 0;
+    font-size: 14pt;
+    text-align: center;
+}
+.list_box > div.top > div{
+    font-weight: 1000;
+}
+.list_box .num{
+    width: 10%;
+}
+.list_box .title{
+    width: 50%;
+    text-align: left;
+}
+.list_box .top .title{
+    width: 50%;
+    text-align: center;
+}
+.list_box .writer{
+    width: 10%;
+}
+.list_box .date{
+    width: 10%;
+}
+.list_box .count{
+    width: 10%;
+}
+.page_btn{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+}
+.page_btn a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid grey;
+}
+.page_btn a.bt{
+    font-size: 14pt;
+    padding-top: 9px;
+}
+.page_btn a.num{
+    font-size: 14pt;
+    padding-top: 9px;
+    font-weight: bold;
+}
+.page_btn a.num.on{
+    border-color: white;
+    background: white;
+    color: black !important;
+}
+
+.btn-last {
+    border: none;
+}

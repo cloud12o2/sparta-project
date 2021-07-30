@@ -1,0 +1,171 @@
+{% extends "base.html"  %}
+{% block content %}
+<main>
+    <div class="ranking-contents">
+        <div class="movie-rank">
+            <h1 class="movie-rank_title">박스오피스 순위</h1>
+            <ul id="jsBoxOfficeList" class="movie-rank_ul">
+                {% for ranking in box_office %}
+                    <li class="movie-rank_list">
+                        <a href="{{ranking['movie_link']}}">
+                            <div class="movie-rank_list_img">
+                                <img src="{{ranking['img']}}"/>
+                                <h3>{{ranking['rank']}}</h3>
+                            </div>
+                            <h2>{{ranking['title']}}</h2>
+                            <div>
+                                <span>{{ranking['release_year']}}</span>
+                                <span>・</span>
+                                <span>{{ranking['countries']}}</span>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor%}
+            </ul>
+            <div class="prev-button">
+                <button id="jsBoxOfficePrevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="next-button">
+                <button id="jsBoxOfficeNextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="movie-rank">
+            <h1 class="movie-rank_title">왓챠 순위</h1>
+            <ul id="jsWatchaList" class="movie-rank_ul">
+                {% for ranking in watcha %}
+                    <li class="movie-rank_list">
+                        <a href="{{ranking['movie_link']}}">
+                            <div class="movie-rank_list_img">
+                                <img src="{{ranking['img']}}"/>
+                                <h3>{{ranking['rank']}}</h3>
+                            </div>
+                            <h2>{{ranking['title']}}</h2>
+                            <div>
+                                <span>{{ranking['release_year']}}</span>
+                                <span>・</span>
+                                <span>{{ranking['countries']}}</span>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor%}
+            </ul>
+            <div class="prev-button">
+                <button id="jsWatchaPrevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="next-button">
+                <button id="jsWatchaNextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="movie-rank">
+            <h1 class="movie-rank_title">넷플릭스 순위</h1>
+            <ul id="jsNetflixList" class="movie-rank_ul">
+                {% for ranking in netflix %}
+                    <li class="movie-rank_list">
+                        <a href="{{ranking['movie_link']}}">
+                            <div class="movie-rank_list_img">
+                                <img src="{{ranking['img']}}"/>
+                                <h3>{{ranking['rank']}}</h3>
+                            </div>
+                            <h2>{{ranking['title']}}</h2>
+                            <div>
+                                <span>{{ranking['release_year']}}</span>
+                                <span>・</span>
+                                <span>{{ranking['countries']}}</span>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor%}
+            </ul>
+            <div class="prev-button">
+                <button id="jsNetflixPrevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="next-button">
+                <button id="jsNetflixNextBtn">
+                    <i class="fas fa-chevron-right fa-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="movie-collections">
+            <h1 class="movie-collections_title">왓챠피디아 컬렉션</h1>
+            <div class="movie-collections_contents">
+                <ul class="movie-collections_ul">
+                    <a href="/ranking/academy-men">
+                        <li class="movie-collections_list">
+                            <div class="movie-collections_list_img">
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/8917e30d863e8864d6de7145c51ae324.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1pOXpkRzl5WlM5cGJXRm5aUzh4TmpFMk5EZ3lNekEzTWpRM09EVTJPREEwSWl3aWNYVmhiR2wwZVNJNk9EQXNJbmRwWkhSb0lqb3lPREI5LkZmTGg4eDlJM1RsdjVnSm1MQnRjS1hFaUQ4b0RESlNMTVR3WmpQOThDVTQ"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/8066ea184f355cc1037a79341e2a67fe.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXJOM2gzY21KMmFHdHBlbkowTUhSbGJIcHNjaUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5kVmNTanlCZ21PaDFEX1FpNzA1M2tKdlFaOWdGVi1WUlFmdUJheUpNdFdB"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/f5b45dca45238802f13c3ad7a847a475.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXllRGgzYVhsa2JuRjNkR2x5T1dkM2VIQnliaUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS52R3I1bG85TDUxNnAxYTQzNmdjVWlTcDdXNndDbDFxOXpaYnd4RU1kSnVN"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/74596ac90e35e7e8704584d171671607.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOTJkMms0YzJOdmMyTnpPSGh3Y1hZeWNHcDBjeUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5Tb1V1R3pvWDd4bXNYckQzZV9qREItR3p5eTdVWEZ5MDQtTUhrZDhwQ1F3"/>
+                            </div>
+                            <h2>아카데미 남우주연상 수상작</h2>
+                        </li>
+                    </a>
+                </ul>
+                <ul class="movie-collections_ul">
+                    <a href="/ranking/jeonju">
+                        <li class="movie-collections_list">
+                            <div class="movie-collections_list_img">
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/ebfa8b13d018c32431bea269ee6bd8d1.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOWhPWEJzYm00MGVUY3dkV1JrTUhScWNUSjNZaUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5uczN6SzNTYjJKOFRQaGVoTGt3TDB4eTdrMEdVekc4aUlrVDZ0SFlCZ2E4"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/f5b4a716f5d8baac5e1dda978753a023.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXFaRGRrYWpab2RYSTFZelZoY25SeU4yeDZieUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5YTHFBV3F3cjRlTzhGTXQzeVJrclB1WWNUd3lRNTBpSkMwS2pzeldrQzlr"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/c3902bd3015719256d870d80a92f8507.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXhlbTVvYm5wek4zQnZiM1pwY0dkamRHNXNZeUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS4wd1NsNEMxYTVUUHMtYXBrYXo4NG02UV9RVkZ4V1NDODdRN19MQUNIS0tz"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/6b735c1a4055b9298b11dcdfb685c674.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXFZWEU0Ym1OaFpuUm1ibmx6Y1RCaWFtVmxiQ0lzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5aOTZLQ2VTN1J6dG9udFk4M2ZvLTZ2NU16aVJMbDJRbnE4ZVptTThkZ1pj"/>
+                            </div>
+                            <h2>전주국제영화제 수상작</h2>
+                        </li>
+                    </a>
+                </ul>
+                <ul class="movie-collections_ul">
+                    <a href="/ranking/venice-film">
+                        <li class="movie-collections_list">
+                            <div class="movie-collections_list_img">
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/610b38e8da195a97aea785408eb87ae0.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1pOXpkRzl5WlM5cGJXRm5aUzh4TmpFMk9UZzNOell4TnpFeU5UQXlPVEkxSWl3aWNYVmhiR2wwZVNJNk9EQXNJbmRwWkhSb0lqb3lPREI5Lm9sc0R4SFg4OVlIMGVveVh3d2xwQWJOaDh5cmpESTVBYWU1NGs2QjR6alE"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/8066ea184f355cc1037a79341e2a67fe.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXJOM2gzY21KMmFHdHBlbkowTUhSbGJIcHNjaUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5kVmNTanlCZ21PaDFEX1FpNzA1M2tKdlFaOWdGVi1WUlFmdUJheUpNdFdB"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/c8ee636d8e03f279f7de5dca8a2c4dc2.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOW9hVzE2Tm5sd2VuaGxORGx5T0dkNmJteHBjU0lzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5za08zNFUycjRxVmZMLTdDTENBVE02OEZia3ZGZXpzdjJUNXllUllYdWlz"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/94849913b3cb833914adb44879820d6c.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXJhMlJ4ZG5kcFltcGtjVGRuTm1rMWMzQXhkU0lzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5qX3F2QUdEZ2ZDSzduYUlfaVRWZDV6cTVjRENuRnp1TUZab2hvamQ1UzZr"/>
+                            </div>
+                            <h2>베니스영화제 황금사자상 수상작</h2>
+                        </li>
+                    </a>
+                </ul>
+                <ul class="movie-collections_ul">
+                    <a href="/ranking/academy-film">
+                        <li class="movie-collections_list">
+                            <div class="movie-collections_list_img">
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/b2c2f240e5bc5cee0c13f837230e0e13.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXRPREUzYkRGeVpHczRORGRvZUd4eU5tWnlkeUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5Pdnc2WmZHaDczYkUxRHMyMDc5VWNJZ0VCNVMwQmxuS2xlVjdnSDRaM1A0"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/668558de73fca8be2025252002e6be82.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOTRibms0YlhNNU4zTm1aR1Z3YVRoaVpHVnBaeUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5BdVN0N1BSMTN3bVNtb2J4OFlENExRLUJKRWVqRlBUbk9OZmtyd3lDek1n"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/c8ee636d8e03f279f7de5dca8a2c4dc2.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOW9hVzE2Tm5sd2VuaGxORGx5T0dkNmJteHBjU0lzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5za08zNFUycjRxVmZMLTdDTENBVE02OEZia3ZGZXpzdjJUNXllUllYdWlz"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/1cf5aea558cca2f7d0cd70fd776dee28.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOWpiSFV4Tm13MWJtSm1ZVzkwTkhsNlkycDZOeUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5ZdjRQMkNxOHhVNTZHdTFrM09XQzQ2WGE2M2xFT3BIS2FjMkJuTTc0YVRr"/>
+                            </div>
+                            <h2>아카데미 촬영상 수상작</h2>
+                        </li>
+                    </a>
+                </ul>
+                <ul class="movie-collections_ul">
+                    <a href="/ranking/academy-women">
+                        <li class="movie-collections_list">
+                            <div class="movie-collections_list_img">
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/610b38e8da195a97aea785408eb87ae0.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1pOXpkRzl5WlM5cGJXRm5aUzh4TmpFMk9UZzNOell4TnpFeU5UQXlPVEkxSWl3aWNYVmhiR2wwZVNJNk9EQXNJbmRwWkhSb0lqb3lPREI5Lm9sc0R4SFg4OVlIMGVveVh3d2xwQWJOaDh5cmpESTVBYWU1NGs2QjR6alE"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/ef16b8e337b40c55427e636f494fc4ff.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXBlblJuZW5GdWJtTm1lbWw2YW5WcVkzRnNjU0lzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5kME5kUV94R2wxWFdkLTlGRXEyY2VGTWEzcllEQmRocjUtajh3MU9XdzYw"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/4f3b3b3eb4fb6e67207e071879b4817b.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOTJaR0ZsY25CMmF6ZG1ZekYwYVhKdVluRnpaeUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS5VNG1QTkhiakp6YnB2NDNUNGNNRmpLcGV3QVZyWS1LZ01UOE4xRk1ZQ1k4"/>
+                                <img src="https://an2-img.amz.wtchn.net/image/v2/122911081893d1d5236d51aef10ad39e.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPalF3TUN3aWNHRjBhQ0k2SWk5Mk1TOXlZM2h5Y21oeE5HbHVlWGhoTURKMk16UTVaaUlzSW5GMVlXeHBkSGtpT2pnd0xDSjNhV1IwYUNJNk1qZ3dmUS41T3J6bzZjclZ6SUp3aldTWWd2U0VPdVpOT1JpME5TYjVKMEI4ck5ueGpn"/>
+                            </div>
+                            <h2>아카데미 여우조연상 수상작</h2>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

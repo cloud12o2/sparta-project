@@ -1,0 +1,22 @@
+@import "reset.css";
+
+
+/* Components */
+@import "components/nav.css";
+@import "components/footer.css";
+
+/* Screens */
+@import "screens/boardlist.css";
+@import "screens/collections.css";
+@import "screens/ranking.css";
+@import "screens/textContent.css";
+@import "screens/textEditor.css";
+@import "screens/upcoming.css";
+@import "screens/index.css";
+
+
+body {
+    color: white;
+    background-color: #160d08;
+    height: 100%;
+}

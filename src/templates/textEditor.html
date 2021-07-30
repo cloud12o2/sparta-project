@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main-container">
+    <div class="write_top">
+        <form name="form" method="POST" action="/boardlist/texteditor" class="write_title">
+            <h3>* 글쓰기</h3>
+            <p>영화 리뷰를 자유롭게 작성해주세요.</p>
+            <div class="write_wrap">
+                <div class="write_box">
+                    <div class="title">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>
+                                <input name="title" type="text" placeholder="제목을 입력해주세요." required>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>글쓴이</dt>
+                            <dd><input name="writer" type="text" placeholder="글쓴이 입력" required></dd>
+                        </dl>
+                        <dl>
+                            <dt>비밀번호</dt>
+                            <dd><input name="password" type="password" placeholder="비밀번호 입력" required></dd>
+                        </dl>
+                    </div>
+                    <div class="note">
+                        <textarea name="contents" placeholder="내용을 입력해주세요." required></textarea>
+                    </div>
+                    <div class="btn_wrap">
+                        <input class="btn_wrap_input" type="submit" value="등록" class="on">
+                        <a href="/boardlist">취소</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

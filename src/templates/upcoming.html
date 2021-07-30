@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    <div class="upcoming-contents">
+        <div class="upcoming-movie">
+            <h1 class="upcoming-movie-list_title">왓챠 개봉예정작</h1>
+            <ul class="upcoming-movie_ul">
+                {% for collection in daum_watcha_newly %}
+                    <li class="upcoming-movie_list">
+                        <a href="{{collection['link']}}">
+                            <div class="upcoming-movie_list_img">
+                                <img src="{{collection['img']}}"/>
+                                <h3>{{collection['open_date']}}</h3>
+                            </div>
+                            <h2>{{collection['title']}}</h2>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="upcoming-movie">
+            <h1 class="upcoming-movie-list_title">넷플릭스 개봉예정작</h1>
+            <ul class="upcoming-movie_ul">
+                {% for collection in netflix_newly %}
+                    <li class="upcoming-movie_list">
+                        <a href="{{collection['link']}}">
+                            <div class="upcoming-movie_list_img">
+                                <img src="{{collection['img']}}"/>
+                                <h3>{{collection['open_date']}}</h3>
+                            </div>
+
+                            <h2>{{collection['title']}}</h2>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="upcoming-movie">
+            <h1 class="upcoming-movie-list_title">Yes24 개봉예정작</h1>
+            <ul class="upcoming-movie_ul">
+                {% for collection in yes24_newly %}
+                    <li class="upcoming-movie_list">
+                        {#           <a href="{{collection['movie_link']}}">#}
+                        <div class="upcoming-movie_list_img">
+                            <img src="{{collection['img']}}"/>
+                        </div>
+                        <h2>{{collection['title']}}</h2><h3>{{collection['open_date']}}</h3>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</main>
+{% endblock %}

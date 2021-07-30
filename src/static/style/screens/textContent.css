@@ -1,0 +1,113 @@
+.board_top{
+    width: 100%;
+    padding-bottom: 80px;
+}
+.board_container_wrap{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 300px;
+}
+.board_container_wrap h3{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.board_container_wrap p{
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.board_view {
+    width: 100%;
+    border-top: 2px solid white;
+    }
+.board_view .title{
+    padding: 20px 15px;
+    border-bottom: 1px dotted gray;
+    font-size: 14pt;
+}
+.board_view .info{
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    /*font-size: 0;*/
+}
+.board_view .info dl{
+    display: inline-block;
+    position: relative;
+    font-size: 12pt;
+    padding:  0 20px;
+}
+.board_view .info dl:first-child{
+    padding-left: 0;
+}
+.board_view .info dl::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: grey;
+}
+.board_view .info dl:first-child::before{
+    display: none;
+}
+.board_view .info dl dt, dd{
+    display: inline-block;
+}
+.board_view .info dl dt{
+    font-weight: bold;
+}
+.board_view .info dl dd{
+    margin-left: 10px;
+    color: #777;
+}
+.board_view {
+    padding: 15px;
+    border-bottom: 2px solid white;
+    line-height: 160%;
+    font-size: 14pt;
+}
+
+/*게시판 메인 글 부분*/
+
+.cont {
+    min-height: 40vh;
+}
+
+.cont ol {
+    height: 100%;
+    padding: 10px;
+}
+
+.cont p,
+.cont h1,
+.cont h2,
+.cont h3,
+.cont h4,
+.cont h5 {
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+
+.btn_wrap{
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+}
+.btn_wrap a{
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-size: 12pt;
+}
+.btn_wrap a:first-child{
+    margin-left: 0;
+}
+.btn_wrap a.on{
+    background: white;
+    color: black !important;
+}

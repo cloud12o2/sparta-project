@@ -1,0 +1,64 @@
+.upcoming-contents {
+    margin: 0 auto;
+    width: 83vw;
+    padding: 10vh 1vw;
+}
+
+.upcoming-movie-list_title{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.upcoming-movie_ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 10vh;
+}
+
+.upcoming-movie_list {
+    position: relative;
+    padding: 0 1.7vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    transition: transform .2s;
+}
+
+.upcoming-movie_list_img:hover {
+    transform: scale(1.1);
+}
+
+
+.upcoming-movie_list_img img {
+    width: 14vw;
+    background-color: white;
+    border-top: 3px solid dimgray;
+    border-right: 3px solid dimgray;
+    border-radius: 20px;
+}
+
+.upcoming-movie_list_img h3 {
+    position: absolute;
+    top: 2.5vh;
+    left: 1.5vw;
+    background-color: black;
+    width: 3vw;
+    height: 4vh;
+    font-size: 20px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    font-weight: bold;
+
+}
+
+.upcoming-movie_list h2 {
+    font-weight: 600;
+    margin-top: 2.5vh;
+}
+
+.upcoming-movie_list div {
+    font-size: 14px;
+    margin-top: 1vh;
+}

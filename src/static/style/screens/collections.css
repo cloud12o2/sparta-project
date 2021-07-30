@@ -1,0 +1,73 @@
+body {
+    color: white;
+    background-color: black;
+    height: 240vh;
+}
+
+main {
+    padding-top: 22vh;
+    height: 100%;
+}
+
+/* /ranking으로 이동하는 아이콘 */
+.main_previous-link i {
+    color: tomato;
+    margin-left: 9vw;
+}
+
+.main_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+    padding-bottom: 2vh;
+    border-bottom: solid 1px grey;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main_title h1 {
+    margin-left: 9vw;
+}
+
+.main-content {
+    margin: 7vh 4vw;
+}
+
+.main-content_ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 50px;
+}
+
+.main-content_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.main-content_list img {
+   width: 340px;
+    border-radius: 15px;
+    border-top: 4px solid dimgray;
+    border-right: 4px solid dimgray;
+    transition: transform .2s;
+}
+
+.main-content_list img:hover {
+    transform: scale(1.05);
+}
+
+.main-content_list h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 7px;
+}
+
+.main-content_list span {
+    font-size: 18px;
+}

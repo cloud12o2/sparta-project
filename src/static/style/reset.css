@@ -48,16 +48,23 @@ table {
 }
 
 a:link {
-	color: red;
+	color: white;
 	text-decoration: none;
 }
 
 a:visited {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
 a:hover {
-	color: blue;
+	color: white;
 	text-decoration: none;
 }
+
+
+button:focus{
+    border: none;
+    outline:none;
+}
+

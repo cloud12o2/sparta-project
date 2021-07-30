@@ -1,0 +1,27 @@
+{% extends "base.html"  %}
+{% block content %}
+<main>
+    <div class="main_title">
+        <div class="main_previous-link">
+            <a href="/ranking">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+        <h1>{{ main_content_title }}</h1>
+    </div>
+    <div class="main-content">
+        <ul class="main-content_ul">
+            {% for movie in collection %}
+                <li class="main-content_list">
+                    <a href="{{movie['link']}}">
+                        <img src="{{movie['img']}}">
+                    </a>
+                    <h3>{{movie['title']}}</h3>
+                    <span>{{movie['star']}}</span>
+                </li>
+            {% endfor%}
+        </ul>
+    </div>
+</main>
+
+{% endblock %}

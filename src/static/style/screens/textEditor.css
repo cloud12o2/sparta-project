@@ -1,0 +1,107 @@
+.main-container{
+    width: 100%;
+    background: #160d08;
+}
+.write_top{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 27vh;
+}
+.write_title h3{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.write_title p{
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.write_wrap{
+    border-top: 2px solid white;
+}
+.write_wrap .title, .info{
+    padding: 15px;
+}
+.write_wrap .info{
+    border-top: 1px dotted grey;
+    border-bottom: 1px solid white;
+    font-size: 0;
+}
+.write_wrap .title dl{
+    font-size: 0;
+}
+.write_wrap .info dl{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.write_wrap  .title dt, dd,
+.write_wrap .info dt, dd{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14pt;
+}
+.write_wrap  .title dt, .info dt{
+    width: 100px;
+    font-weight: bold;
+}
+.write_wrap  .title dd{
+    width:  calc(100% - 100px);
+}
+.write_wrap .title input[type="text"],
+.write_wrap .info input[type="text"],
+.write_wrap .info input[type="password"]{
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.write_wrap .title input[type="text"]{
+    width: 82%;
+}
+.write_wrap .note{
+    border-bottom: 1px solid white;
+}
+.write_wrap .note textarea{
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+}
+
+.note,
+.note textarea {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.btn_wrap{
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+}
+
+.btn_wrap a,
+.btn_wrap_input {
+    display: inline-block;
+    min-width: 80px;
+    margin: 0  0 80px 10px;
+    padding: 10px;
+    border: 2px solid dimgray;
+    border-radius: 2px;
+    font-size: 12pt;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_wrap a:first-child{
+    margin-left: 0;
+}
+
+.btn_wrap a.on{
+    background: white !important;
+    color: black !important;
+}
