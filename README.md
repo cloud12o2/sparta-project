@@ -1,71 +1,72 @@
-# 스파르타 팀 프로젝트
+# Which Movie
+최신 영화 정보 및 개봉예정작을 한번에 볼 수 있고, 해당 영화를 검색 할 수 있는 사이트입니다. <br/>
+네이버 API를 사용해 검색 기능을 구현했고 다양한 사이트에서 영화 관련 정보를 크롤링해서 보여주고 있습니다. <br/>
+추가적으로 게시판에서 영화에 대한 정보 및 리뷰를 작성 할 수도 있습니다.
 
-팀 프로젝트를 진행 하기 전 협업을 위한 기본적인 규칙을 적어 봤습니다.
+
+<a href="http://whichmovie.shop/">Which Movie 링크로 가기</a> <br/>
 <br/>
 <br/>
-## 파이썬 변수명 및 함수명 선언 규칙
+## 팀원
 
-#### 변수명은 snake case 표기법을 사용할 예정입니다.
+- Front-end: 이아람, 방하은
+- Back-end: 김남운, 임전혁
+
 <br/>
 
-- 모두 소문자로 표현하며 단어와 단어 사이를 언더스코어(_)를 이용하여 구분합니다.
-
-```python
-super_long_variable = 1
-
-def hello_world():
-  print('Hello World')
-```
-<br/>
+## 개발기간
+기간: 2021.07.19 ~ 2021.07.29 (11일)  
 <br/>
 
-## 자바스크립트 변수명 및 함수명 선언 규칙
-
-#### 변수명은 camel case 표기법을 사용할 예정입니다.  
+## 적용기술  
   
-- 첫 글자는 무조건 소문자로 작성합니다.    
-- 띄어쓰기 부분 없이 글자들을 전부 붙여줍니다.
-- 두번째 문자의 첫번째 글짜를 대문자로 적습니다.
-- 낙타의 혹같아 보인다고 해서 camel(낙타) case 표기법이라고 불립니다.
+- Front-end: HTML, CSS, JavaScript, Jquery, Flask, Jinja2
+- Back-end: Python, Flask, Jinja2, MogoDB
 
-
-```javascript
-superLongVariable = 1;
-
-function helloWorld() {
-  console.log("Hello World");
-}
-```
-<br/>
 <br/>
 
-## HTML, CSS, JavaScript 오픈소스 웹사이트
+## 구현 기능
 
-<img src="https://user-images.githubusercontent.com/70641418/126017913-22ed0fe2-9dd6-49b0-ba60-1a2837e4f7e1.JPG">
+### Front-end
+1. 네이버 검색 API를 활용한 영화 검색
+2. 네이버 검색 API 사용 시 Ajax 활용
+3. Pagination 및 영화 순위 슬라이드 기능 구현 시 JS와 Jquery 사용
 
-- 위 사진은 해당 사이트에서 로그인 폼(Login Form)을 검색해서 나온 결과입니다.
-- 사진에서 보이듯이 다른 사람이 구현해 놓은 코드를 전부 볼 수 있습니다.
-- 코드 전체 복사 붙여 넣기도 가능하고 참고용으로도 좋습니다.    
-<a href="https://codepen.io/" target="_blank" >해당 링크</a>   
+### Back-end
+1. Beautiful Soup을 활용한 영화 순위 및 개봉예정작 크롤링
+2. 크롤링한 데이터 NoSQL인 MogoDB를 활용 insert
+3. 게시판 페이지에서 CRUD 기능 구현
 
 <br/>
 <br/>
 
-## Font Awesome (무료 Icon 웹사이트)
+## 개인 역할
 
-<img src="https://user-images.githubusercontent.com/70641418/126022955-413574b3-493d-42c6-87bf-290f1bdabbec.JPG">
+<code>임전혁</code>
+1. 팀장 역할 및 깃 환경설정
 
-- 위와 같이 원하는 아이콘을 찾아서 사용 할 수 있습니다.    
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/70641418/126022984-601b522b-5228-4030-8cdc-04dee16e2cb4.JPG">
-
-- 위 사진에 보시면 빨간색으로 표시된 부분을 클릭하면 해당 아이콘 태그가 복사됩니다.
-- 복사한 태그를 원하는 부분에 붙여넣기 하시면 됩니다.(HTML)   
-
-<br/>
-
-<a href="https://fontawesome.com/" target="_blank">해당 링크</a>
+<code>김남운</code>
+1. 백엔드
 
 
+<code>이아람</code>
+1. 프론트
+
+<code>방하은</code>
+1. 프론트
+
+
+
+## 소감 및 후기
+
+<code>임전혁</code>
+- 소감
+
+<code>김남운</code>
+- 소감
+
+<code>이아람</code>
+- 소감
+
+<code>방하은</code>
+- 소감
