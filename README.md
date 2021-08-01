@@ -5,6 +5,10 @@
 
 
 <a href="http://whichmovie.shop/">Which Movie 링크로 가기</a> <br/>
+
+![썸네일](https://user-images.githubusercontent.com/70641418/127768727-74e0a62f-9d35-4e1f-89a1-3bb7fb8b2084.JPG)
+
+
 <br/>
 <br/>
 ## 팀원
