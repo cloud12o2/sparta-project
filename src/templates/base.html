@@ -53,11 +53,28 @@
                             <li><a href="/ranking">영화순위</a></li>
                             <li><a href="/boardlist">게시판</a></li>
                         </ul>
+                        <a class="login-trigger whiten-hover" href="#" data-target="#login" data-toggle="modal">Login</a>
                     </div>
                 </div>
             </nav>
         </header>
 
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button data-dismiss="modal" class="close">&times;</button>
+                        <h4>Login</h4>
+                        <form>
+                            <input type="text" name="username" class="username form-control" placeholder="Username"/>
+                            <input type="password" name="password" class="password form-control" placeholder="password"/>
+                            <input class="btn login" type="submit" value="Login" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% block content %}
         {% endblock %}
 

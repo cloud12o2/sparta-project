@@ -4,7 +4,6 @@ from views import board_views
 from views import ranking_views
 from views import collections_views
 from views import upcoming_views
-from views import login_views
 from apiRouter import search_api
 
 app = Flask(__name__)
@@ -21,7 +20,7 @@ app.register_blueprint(board_views.board_list_page)
 app.register_blueprint(upcoming_views.upcoming_page)
 app.register_blueprint(ranking_views.ranking_page)
 app.register_blueprint(collections_views.collection_page)
-app.register_blueprint(login_views.login_page)
+
 
 # API 라우터
 app.register_blueprint(search_api.search_page)
