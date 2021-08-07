@@ -78,8 +78,6 @@ def venice_film():
     return gold_lion_list
 
 
-
-
 #아카데미 촬영상 수상작
 def academy_film():
     data = requests.get('https://pedia.watcha.com/ko-KR/staffmades/581', headers=headers)

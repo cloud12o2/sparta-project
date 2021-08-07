@@ -5,7 +5,7 @@
         <div class="upcoming-movie">
             <h1 class="upcoming-movie-list_title">왓챠 개봉예정작</h1>
             <ul class="upcoming-movie_ul">
-                {% for collection in daum_watcha_newly %}
+                {% for collection in daum_watcha %}
                     <li class="upcoming-movie_list">
                         <a href="{{collection['link']}}">
                             <div class="upcoming-movie_list_img">
@@ -22,7 +22,7 @@
         <div class="upcoming-movie">
             <h1 class="upcoming-movie-list_title">넷플릭스 개봉예정작</h1>
             <ul class="upcoming-movie_ul">
-                {% for collection in netflix_newly %}
+                {% for collection in netflix %}
                     <li class="upcoming-movie_list">
                         <a href="{{collection['link']}}">
                             <div class="upcoming-movie_list_img">
@@ -40,7 +40,7 @@
         <div class="upcoming-movie">
             <h1 class="upcoming-movie-list_title">Yes24 개봉예정작</h1>
             <ul class="upcoming-movie_ul">
-                {% for collection in yes24_newly %}
+                {% for collection in yes24 %}
                     <li class="upcoming-movie_list">
                         {#           <a href="{{collection['movie_link']}}">#}
                         <div class="upcoming-movie_list_img">
