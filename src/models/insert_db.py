@@ -1,7 +1,7 @@
 from pymongo import MongoClient
-from crawling import ranking
-from crawling import collections
-from crawling import upcoming
+from .crawling import ranking
+from .crawling import collections
+from .crawling import upcoming
 
 # client = MongoClient('mongodb://test:test@localhost', 27017)
 client = MongoClient('localhost',27017)
@@ -45,7 +45,7 @@ def collections_db_insert():
     for movie in collections.jeonju():
         collections_db.jeonju.insert_one(movie)
 
-    # #베니스영화제 황금사자상 수상작
+    #베니스영화제 황금사자상 수상작
     # for movie in collections.venice_film():
     #     collections_db.insert_one(movie)
 
@@ -62,22 +62,16 @@ def collections_db_insert():
 
 # 개봉예정영화 DB에 insert
 def upcoming_db_insert():
-    upcoming_db.daum_watcha_newly.delete_many({})
-    upcoming_db.netflix_newly.delete_many({})
-    upcoming_db.yes24_newly.delete_many({})
+    upcoming_db.daum_watcha.delete_many({})
+    upcoming_db.netflix.delete_many({})
+    upcoming_db.yes24.delete_many({})
 
 
-    for movie in upcoming.netflix_newly():
-        upcoming_db.netflix_newly.insert_one(movie)
+    for movie in upcoming.netflix():
+        upcoming_db.netflix.insert_one(movie)
 
-    for movie in upcoming.daum_watcha_newly():
-        upcoming_db.daum_watcha_newly.insert_one(movie)
+    for movie in upcoming.daum_watcha():
+        upcoming_db.daum_watcha.insert_one(movie)
 
-    for movie in upcoming.yes24_newly():
-        upcoming_db.yes24_newly.insert_one(movie)
-
-
-
-ranking_db_insert()
-collections_db_insert()
-upcoming_db_insert()
+    for movie in upcoming.yes24():
+        upcoming_db.yes24.insert_one(movie)

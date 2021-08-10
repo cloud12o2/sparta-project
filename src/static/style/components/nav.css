@@ -19,6 +19,11 @@ nav {
     width: 11vw;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+}
+
 .menu ul{
     margin: 0 auto;
     padding: 35px 0 0 0;
@@ -46,4 +51,78 @@ nav {
 .menu .mn_gnb > li:hover>a{
         color: #ff0000 !important;
     border-bottom: 1.5px solid rgba(255, 165, 71, 0.5);;
+}
+
+
+/* 로그인 팝업 창 */
+
+/*Trigger Button*/
+.login-trigger {
+    font-size: 18px;
+    margin-top: 35px;
+    right: 10vw;
+    font-weight: bold;
+    padding: 1vh 1.2vw;
+    border-radius: 15px;
+    position: absolute;
+    background-color: rgb(89, 95, 114);
+    color: rgba(255, 255, 255, .8);
+    border-color: black;
+
+}
+
+.whiten-hover:hover {
+    color: black;
+    background:#fff;
+    box-shadow: .1em .1em 3em rgba(0,0,0, 0.2);
+}
+
+.modal {
+    top: 35vh;
+}
+
+.close {
+    color: #fff;
+    transform: scale(1.2)
+}
+.modal-content {
+    font-weight: bold;
+    background: linear-gradient(to bottom right,#F87E7B,#B05574);
+}
+.form-control {
+    margin: 1em 0;
+}
+.form-control:hover, .form-control:focus {
+    box-shadow: none;
+    border-color: #fff;
+}
+.username, .password {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #eee;
+    padding-left: 0;
+    font-weight: normal;
+    background: transparent;
+}
+.form-control::-webkit-input-placeholder {
+    color: #eee;
+}
+.form-control:focus::-webkit-input-placeholder {
+    font-weight: bold;
+    color: #fff;
+}
+.login {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid #FAB87F;
+    color: #FAB87F;
+    font-weight: bold;
+    transition: all .5s;
+    margin-top: 1em;
+}
+.login:hover {
+    background: #FAB87F;
+    color: #fff;
 }

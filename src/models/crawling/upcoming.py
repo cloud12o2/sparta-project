@@ -7,7 +7,7 @@ headers = {
 }
 
 # daum영화 넷플리스 공개예정작
-def netflix_newly():
+def netflix():
     data = requests.get('https://movie.daum.net/premovie/netflix?flag=Y', headers=headers)
     soup = BeautifulSoup(data.text, 'html.parser')
     all_li = soup.select('#mainContent>div>div.box_movie>ul>li')
@@ -35,7 +35,7 @@ def netflix_newly():
 
 
 # daum영화 왓챠 개봉예정작
-def daum_watcha_newly():
+def daum_watcha():
     data = requests.get('https://movie.daum.net/premovie/watcha?flag=Y', headers=headers)
     soup = BeautifulSoup(data.text, 'html.parser')
     all_li = soup.select('#mainContent>div>div.box_movie>ul>li')
@@ -62,7 +62,7 @@ def daum_watcha_newly():
 
 
 # yes24영화 개봉예정작
-def yes24_newly():
+def yes24():
     data = requests.get('https://movie.yes24.com/MovieInfo/PromotionMovie', headers=headers)
     soup = BeautifulSoup(data.text, 'html.parser')
     all_li = soup.select(

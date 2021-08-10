@@ -9,6 +9,7 @@ daum_watcha = upcoming_db['daum_watcha']
 netflix = upcoming_db['netflix']
 yes24 = upcoming_db['yes24']
 
+
 upcoming_page = Blueprint('upcoming', __name__, url_prefix='/')
 
 @upcoming_page.route('/upcoming')
